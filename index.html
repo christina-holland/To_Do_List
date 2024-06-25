@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!--Link to Bootstrap styling file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="my-4">To-Do List</h1>
+        <div class="row">
+            <!--Creating the box that will hold the text that the user enters and the button that will prompt the JavaScript function-->
+            <div class="col-md-6 offset-md-3">
+                <input type="text" id="todoInput" class="form-control mb-2" placeholder="Enter a new item">
+                <button type="button" class="btn btn-success btn-block mb-3" onclick="addTodo()">Add Item to 'To-Do List'</button>
+            <!--Creating the logged list of items as they are entered-->
+                <h2>Current List</h2>
+                <ul id="todoList" class="list-group">
+            <!-- To-Do items will be added here after the button is clicked-->
+                </ul>
+            <!--Instructing the user for how to remove an item from the list-->
+                <h6>click an item to remove</h6>
+            </div>
+        </div>
+    </div>   
+    
+    <!--Link to JavaScript file-->
+    <script src="toDoList.js"></script>
+</body>
+</html>
